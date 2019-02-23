@@ -1,4 +1,4 @@
-## Data Journalism Project   
+## Data Journalism Project
 
 <hr>
 
