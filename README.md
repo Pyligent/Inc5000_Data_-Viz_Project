@@ -1,7 +1,5 @@
-## Data Journalism Project
-
-
-
+## ->Data Journalism Project<-
+<hr>
 ### Exploring INC Magazine's fastest growing private companies
 
 
