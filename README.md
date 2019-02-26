@@ -19,7 +19,7 @@
 
 #### Data Extract and Load
 - CSV formatted Data downloaded from the data.world
-- Using python/SQLAchemy/psycopg2 to Extract out/Load into[GitHub](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Load.ipynb) the PostgreSQL database
+- Using python/SQLAchemy/psycopg2 to Extract out[(GitHub)]()/Load into[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Load.ipynb) the PostgreSQL database
 - Flask Webserver will provide the JSON format API data
   
 #### Data Visualization 
