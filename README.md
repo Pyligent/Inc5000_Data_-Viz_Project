@@ -2,11 +2,7 @@
 #### INC Magazine's 5000 fastest growing private companies
 ![incpic](img/inc.png)
 
-
-![incpic1](img/2018inc.jpg)
-
-
-### Exploring 2018 INC Magazine's fastest growing private companies
+### Exploring INC Magazine's fastest growing private companies
 
 #### Data Source
 
