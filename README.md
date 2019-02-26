@@ -10,11 +10,17 @@
   - [2007 - 2017 Data](https://data.world/aurielle/inc-5000-10-years)   
   
 #### Project Overview
-- Data Storage : MySql or PostgreSQL   
+- Data Storage : PostgreSQL   
 - Workflow Engine (WFE): Flask Web Server/SQLAchemy/Python   
 - Web Application/GUI : HTML/CSS, JavaScript,D3,Leaflet.js   
 - Production Deployment: Heroku  
-- Product : Web Data Journalism Visualization, JSON format API data for INC 5000 data   
+- Product : Web Data Journalism Visualization, JSON format API data for INC 5000 data      
+
+
+#### Data Extract and Load
+- CSV formatted Data downloaded from the data.world
+- Using python/SQLAchemy/psycopg2 to Extract out/Load into the PostgreSQL database
+- Flask Webserver will provide the JSON format API data
   
 #### Data Visualization 
  - Explore the Geo-location relation with the fastest growing private companies.
