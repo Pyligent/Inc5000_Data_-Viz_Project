@@ -42,9 +42,12 @@
   - **@app.route("/founded_year/<founded>")**   
     Return founded year query JSON data
   
+ - API JSON Data Format
+   ![json_format]()
+  
     
   
-#### Data Visualization 
+#### 3. Data Visualization 
  - Explore the Geo-location relation with the fastest growing private companies.
    - States views of the companies
    - City views of companies
