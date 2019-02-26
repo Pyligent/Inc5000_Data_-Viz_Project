@@ -27,15 +27,19 @@
 #### 2. Workflow Engine (WFE)
 - Using the Flask Web server/SQLAchemy/Python  to create the API route and JSON data for data visualization
 - Flask API JSON Data Route:
-  - **@app.route("/2018metadata")**
+  - **@app.route("/2018metadata")**   
     Return Full Inc2018 5000 JSON Metadata   
-  - **@app.route("/rank/<ranking_number>")**
+    
+  - **@app.route("/rank/<ranking_number>")**   
     Return ranking query JSON data   
-  - **@app.route("/state_s/<state_s>")**
+    
+  - **@app.route("/state_s/<state_s>")**   
     Return State query JSON data   
-  - **@app.route("/years_on/<yrs_on_list>")**
+    
+  - **@app.route("/years_on/<yrs_on_list>")**   
     Return years on the list query JSON data   
-  - **@app.route("/founded_year/<founded>")**
+    
+  - **@app.route("/founded_year/<founded>")**   
     Return founded year query JSON data
   
     
