@@ -4,7 +4,7 @@
 
 ### Exploring 2018 INC Magazine's fastest growing private companies
 
-
+![img1](img/inc5000.jpg)
 #### Data Source
 
 - [Inc. Magazine](https://www.inc.com) has published the fastest growing private companies ranking list every year. The full data sets are hosted in the data.world.     
