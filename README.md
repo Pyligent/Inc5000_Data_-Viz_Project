@@ -1,6 +1,6 @@
-## Data Journalism Project - Inc5000 2018 Full List
+## Data Journalism Project - Exploring INC Magazine's 5000 fastest growing private companies
 ![img](img/inc5000.png)
-### Exploring INC Magazine's fastest growing private companies
+### Exploring 2018 INC Magazine's fastest growing private companies
 
 
 #### Data Source
