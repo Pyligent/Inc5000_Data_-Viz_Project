@@ -16,6 +16,8 @@
 - Production Deployment: Heroku  
 - Product : Web Data Journalism Visualization, JSON format API data for INC 5000 data      
 
+<hr>
+
 
 #### Data Extract and Load
 - CSV formatted Data downloaded from the data.world
