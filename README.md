@@ -42,8 +42,8 @@
   - **@app.route("/founded_year/<founded>")**   
     Return founded year query JSON data
   
- - API JSON Data Format
-   ![json_format]()
+ - API JSON Data Format   
+   ![json_format](img/api_json_format.png)
   
     
   
