@@ -4,16 +4,8 @@ import numpy as np
 import psycopg2
 from sqlalchemy import create_engine
 
-#SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
-
-#URL = "postgres://wwbdqcdgscpyca:e1da1c264f89d9a7a5f1a6803284d7187b128dd95c917d8f53bd09bdebf6c0e0@ec2-54-197-232-203.compute-1.amazonaws.com:5432/d3hjbfss6at681"
-#engine = create_engine(URL)
-engine = create_engine('postgres://wwbdqcdgscpyca:e1da1c264f89d9a7a5f1a6803284d7187b128dd95c917d8f53bd09bdebf6c0e0@ec2-54-197-232-203.compute-1.amazonaws.com:5432/d3hjbfss6at681/inc5000')
-
-
-#DATABASE_URL = os.environ['DATABASE_URL']
-
-#conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+DATABASE_URL = os.environ['DATABASE_URL']
+engine = create_engine(DATABASE_URL)
 
 # 1. Load INC5000 2018 Data into the PostgreSQL Database
 
@@ -28,12 +20,13 @@ df.columns = ['id', 'url', 'rank', 'city', 'ifmid', 'ifiid',
 df.to_sql('inc2018_data',  con=engine)
 
 #2. Load INC5000 2007-2017 Data into the PostgreSQL Database
+#-hobby Dev can't support big dataset
 
-inc_ten_df = pd.read_csv('data/inc5000_all10years.csv', sep=',',encoding = 'unicode_escape').replace(to_replace='null', value=np.NaN)
+#inc_ten_df = pd.read_csv('data/inc5000_all10years.csv', sep=',',encoding = 'unicode_escape').replace(to_replace='null', value=np.NaN)
 
-inc_ten_df.columns = ['year', 'rank', 'city', 'growth', 'workers',
-       'company', 'state_s', 'state_l', 'revenue',
-       'yrs_on_list', 'industry', 'metro']
+#inc_ten_df.columns = ['year', 'rank', 'city', 'growth', 'workers',
+#       'company', 'state_s', 'state_l', 'revenue',
+#       'yrs_on_list', 'industry', 'metro']
 
-inc_ten_df.to_sql('inc2007_2017_data',  con=engine)
+#inc_ten_df.to_sql('inc2007_2017_data',  con=engine)
 

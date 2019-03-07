@@ -27,8 +27,8 @@ app = Flask(__name__)
 #################################################
 # Database Setup
 #################################################
-
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL', '')
+DATABASE_URL = os.environ['DATABASE_URL']
+app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
 # for local "postgres://postgres:postgres@@127.0.0.1/inc5000"
 db = SQLAlchemy(app)
 
