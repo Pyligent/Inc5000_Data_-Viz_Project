@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 
+import os
+
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
@@ -26,7 +28,8 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://postgres:postgres@@127.0.0.1/inc5000"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL', '')
+# for local "postgres://postgres:postgres@@127.0.0.1/inc5000"
 db = SQLAlchemy(app)
 
 
