@@ -1,9 +1,12 @@
+import os
 import pandas as pd
 import numpy as np
 import psycopg2
 from sqlalchemy import create_engine
 
-engine = create_engine('postgresql+psycopg2://postgres:postgres@@127.0.0.1/inc5000')
+SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+engine = create_engine(SQLALCHEMY_DATABASE_URI)
+#engine = create_engine('postgresql+psycopg2://postgres:postgres@@127.0.0.1/inc5000')
 
 # 1. Load INC5000 2018 Data into the PostgreSQL Database
 
