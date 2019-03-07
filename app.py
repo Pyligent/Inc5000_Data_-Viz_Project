@@ -36,7 +36,7 @@ db = SQLAlchemy(app)
 metadata = MetaData(bind=db.engine) 
 # inc2018_data = Table('inc2018_data', metadata, autoload_with=db.engine) 
 
-inc2018_data = Table('inc2018_data', metadata, autoload_with=db.engine) 
+#inc2018_data = Table('inc2018_data', metadata, autoload_with=db.engine) 
 
 
 #session = Session(db.engine)
@@ -47,7 +47,7 @@ Base.prepare(db.engine, reflect=True)
 
 session = Session(db.engine)
 
-
+Base.classes.keys()
 # Save references to each table
 Inc2018_data = Base.classes.inc2018_data
 
