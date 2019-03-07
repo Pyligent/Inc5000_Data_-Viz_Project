@@ -36,7 +36,7 @@ db = SQLAlchemy(app)
 metadata = MetaData(bind=db.engine) 
 # inc2018_data = Table('inc2018_data', metadata, autoload_with=db.engine) 
 
-inc2018_data = Table('d3hjbfss6at681', metadata, autoload_with=db.engine) 
+inc2018_data = Table('inc2018_data', metadata, autoload_with=db.engine) 
 
 
 #session = Session(db.engine)
