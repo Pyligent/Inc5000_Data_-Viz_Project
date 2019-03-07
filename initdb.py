@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 
 #URL = "postgres://wwbdqcdgscpyca:e1da1c264f89d9a7a5f1a6803284d7187b128dd95c917d8f53bd09bdebf6c0e0@ec2-54-197-232-203.compute-1.amazonaws.com:5432/d3hjbfss6at681"
 #engine = create_engine(URL)
-engine = create_engine('psycopg2://wwbdqcdgscpyca:e1da1c264f89d9a7a5f1a6803284d7187b128dd95c917d8f53bd09bdebf6c0e0@ec2-54-197-232-203.compute-1.amazonaws.com:5432/d3hjbfss6at681/inc5000')
+engine = create_engine('postgres://wwbdqcdgscpyca:e1da1c264f89d9a7a5f1a6803284d7187b128dd95c917d8f53bd09bdebf6c0e0@ec2-54-197-232-203.compute-1.amazonaws.com:5432/d3hjbfss6at681/inc5000')
 
 
 #DATABASE_URL = os.environ['DATABASE_URL']
