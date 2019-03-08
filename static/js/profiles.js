@@ -90,14 +90,14 @@ function BuildProfileInfo(rank){
                     .append("h5").text("Rank: " + `${rank}`)
                     .append("hr")
                     .append("h5").text("Company Name: " +`${info[0]["Company"]}`)
-                    .append("p").text("Founded Year: " + `${info[0]["Founded"]}`)
-                    .append("p").text("2017 Revenue:   " + `${revenue_format}`)
-                    .append("p").text("3-Year Growth:   " + `${growth_format}`)
-                    .append("p").text("Industry:" + `${info[0]["Industry"]}`)
-                    .append("p").text("City:" + `${info[0]["City"]}`+" , State:"+`${info[0]["State"]}`)
-                    .append("p").text("Employees:",`${info[0]["Workers"]}`)
-                    .append("p").text("Year(s) on the Inc. List: " + `${info[0]["Years_on_List"]}`)
-                    .append("p").text("Company Website:")
+                    .append("p").text("Founded Year : " + `${info[0]["Founded"]}`)
+                    .append("p").text("2017 Revenue :   " + `${revenue_format}`)
+                    .append("p").text("3-Year Growth :   " + `${growth_format}`)
+                    .append("p").text("Industry : " + `${info[0]["Industry"]}`)
+                    .append("p").text("City : " + `${info[0]["City"]}`+" , State : "+`${info[0]["State"]}`)
+                    .append("p").text("Employees :" + ` ${info[0]["Workers"]}`)
+                    .append("p").text("Year(s) on the Inc. List  : " + `${info[0]["Years_on_List"]}`)
+                    .append("p").text("Company Website :")
                     .append("a").attr("href",`${info[0]["Website"]}`).text(`${info[0]["Website"]}`);
                     
         });
