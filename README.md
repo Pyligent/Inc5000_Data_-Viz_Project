@@ -1,5 +1,5 @@
 ##   Data Journalism Project    
-### [Data Visualization Website: https://inc5000-2018-dataviz-tj.herokuapp.com](https://inc5000-2018-dataviz-tj.herokuapp.com)
+### [Data Visualization Website: https://inc2018-dataviz-tj.herokuapp.com](https://inc2018-dataviz-tj.herokuapp.com)
 ![incpic](img/inc.png)
 
 ### Exploring INC Magazine's fastest growing private companies
@@ -14,7 +14,7 @@
 - Data Storage : PostgreSQL   
 - Workflow Engine (WFE): Flask Web Server/SQLAchemy/Python   
 - Web Application/GUI : HTML/CSS, JavaScript,D3,Leaflet.js   
-- Production Deployment: Heroku  [(https://inc5000-2018-dataviz-tj.herokuapp.com)](https://inc5000-2018-dataviz-tj.herokuapp.com)
+- Production Deployment: Heroku  [(https://inc2018-dataviz-tj.herokuapp.com)](https://inc2018-dataviz-tj.herokuapp.com)
 - Product : Web Data Journalism Visualization, JSON format API data for INC 5000 data      
 
 <hr>
