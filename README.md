@@ -1,4 +1,5 @@
-##   Data Journalism Project   [https://inc5000-2018-dataviz-tj.herokuapp.com](https://inc5000-2018-dataviz-tj.herokuapp.com)
+##   Data Journalism Project    
+### [Data Visualization Website: https://inc5000-2018-dataviz-tj.herokuapp.com](https://inc5000-2018-dataviz-tj.herokuapp.com)
 ![incpic](img/inc.png)
 
 ### Exploring INC Magazine's fastest growing private companies
