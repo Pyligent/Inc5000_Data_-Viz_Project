@@ -107,21 +107,27 @@
 - Dashborad
   - Overview the whole dataset:Geo Information/Industry Information/Top Cities and Top companies
   - Full List
+  ![dash](img/dash.png)
      
 - Company Profiles
   - Choose the rank/city/state/founded year and years-on-list to get detailed information
+  ![profiles](img/profiles.png)
      
 - Industry Charts
   - Choose the industry sector/city/state/founded year and years-on-list to get industry-based growth and revenue information
+  ![industry](img/industry.png)
   
 - Location Charts
   - Choose the city/state/founded year and years-on-list to get loaction-based information
+  ![location](img/location.png)
      
 - Table List
   - Choose the industry/city/state/founded year and years-on-list to full raw data table by page
+  ![table](img/table.png)
   
 - Maps
   - Display all Geo information and related Growth and Revenue information
+  ![map](img/map.png)
 
   
   
