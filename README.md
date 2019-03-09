@@ -29,19 +29,61 @@
 - Flask API JSON Data Route: [(app.py)](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/app.py)
   - **@app.route("/2018metadata")**   
     Return Full Inc2018 5000 JSON Metadata   
+  
+  - **@app.route("/2018metadata/pages/<num>")**   
+    Return Inc2018 5000 JSON Metadata by page, when num=0 return full data
+  
+   - **@app.route("/2018metadata/<filter_name>")**   
+    Return filtered Inc2018 5000 JSON Metadata
     
+   - **@app.route("/2018metadata/plot/<plot_name>")**   
+    Return filtered Inc2018 5000 JSON Metadata for plotting
+  
   - **@app.route("/rank/<ranking_number>")**   
     Return ranking query JSON data   
     
   - **@app.route("/state_s/<state_s>")**   
     Return State query JSON data   
     
-  - **@app.route("/years_on/<yrs_on_list>")**   
-    Return years on the list query JSON data   
-    
-  - **@app.route("/founded_year/<founded>")**   
-    Return founded year query JSON data
+  - **@app.route("/state_l/<state_l>/<page_num>")**
+    Return State long name data by page
   
+  - **@app.route("/city/< city>/<page_num>")**
+    Return city data by page
+    
+  - **@app.route("/years_on/<yrs_on_list>")**   
+    Return years on the list query JSON data
+    
+  - **@app.route("/years_on/<yrs_on_list>/<page_num>")**   
+    Return years on the list query JSON data  by page  
+  
+    
+  - **@app.route("/founded_year/< founded>")**   
+    Return founded year query JSON data
+    
+    
+  - **@app.route("/founded_year/< founded>/<page_num>")**   
+    Return founded year query JSON data by page
+  
+    
+  - **@app.route("/industry/< industry>/<page_num>")**
+    Return industry data by page
+
+  
+  - **@app.route("/industry_growth_rev")**
+    Return growth/revenue data groupby industry
+    
+  - **@app.route("/topten_cities")**
+    Return top ten cities
+    
+  - **@app.route("/topten_companies")**
+    Return the top ten companies
+    
+  - **@app.route("/growth_rev_state")**
+    Return growth/revenue data groupby states
+    
+   
+
  - API JSON Data Format   
    ![json_format](img/api_json_format.png)
   
