@@ -14,7 +14,7 @@
 - Data Storage : PostgreSQL   
 - Workflow Engine (WFE): Flask Web Server/SQLAchemy/Python   
 - Web Application/GUI : HTML/CSS, JavaScript,D3,Leaflet.js   
-- Production Deployment: Heroku  [Data Visualization Website: https://inc5000-2018-dataviz-tj.herokuapp.com](https://inc5000-2018-dataviz-tj.herokuapp.com)
+- Production Deployment: Heroku  [(https://inc5000-2018-dataviz-tj.herokuapp.com)](https://inc5000-2018-dataviz-tj.herokuapp.com)
 - Product : Web Data Journalism Visualization, JSON format API data for INC 5000 data      
 
 <hr>
