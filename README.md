@@ -1,4 +1,4 @@
-##   Data Journalism Project   
+##   Data Journalism Project   [https://inc5000-2018-dataviz-tj.herokuapp.com](https://inc5000-2018-dataviz-tj.herokuapp.com)
 ![incpic](img/inc.png)
 
 ### Exploring INC Magazine's fastest growing private companies
@@ -102,8 +102,25 @@
    - Headcount/Revenue/Years on the list/CEO
    - Website information
    
- #### Option (if time is available)
- - Explore the 10 years data to discover the more interesting fact of the fastest growing private companies
+#### 4. Data Visualization Website and Dashborad
+- Dashborad
+  - Overview the whole dataset:Geo Information/Industry Information/Top Cities and Top companies
+  - Full List
+     
+- Company Profiles
+  - Choose the rank/city/state/founded year and years-on-list to get detailed information
+     
+- Industry Charts
+  - Choose the industry sector/city/state/founded year and years-on-list to get industry-based growth and revenue information
+  
+- Location Charts
+  - Choose the city/state/founded year and years-on-list to get loaction-based information
+     
+- Table List
+  - Choose the industry/city/state/founded year and years-on-list to full raw data table by page
+  
+- Maps
+  - Display all Geo information and related Growth and Revenue information
 
   
   
