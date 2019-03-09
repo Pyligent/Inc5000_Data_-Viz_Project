@@ -13,6 +13,8 @@ function init_filter(){
   
   d3.json("/2018metadata/Rank").then((filtername) => {
     filtername.sort(function(a, b){return a-b});
+    non_filtername = filtername.shift();
+    
     filtername.forEach((sample) => {
      
       sel_rank
