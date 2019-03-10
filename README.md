@@ -148,7 +148,7 @@
  - Initialization Database: Set the primary key before the deployment.
    ```
    - $heroku pg:pgql
-   - $ALTER TABLENAME products ADD PRIMARY KEY (key_name);
+   - $ALTER TABLENAME ADD PRIMARY KEY (key_name);
    
    ```
     
