@@ -88,7 +88,15 @@ def build_metadata_list(inc_jsondata_list,results):
         inc_jsondata['longtitude'] = result[10]
         inc_jsondata['Years_on_List'] = result[11]
         inc_jsondata['Company'] = result[12]
-        inc_jsondata['Website'] = result[13]
+# Fix url format
+
+        if result[13].startswith('http://'):
+            url = result[13]
+        else:
+            url = 'http://'+ result[13]
+
+        inc_jsondata['Website'] = url
+
         inc_jsondata['Workers'] = result[14]
         inc_jsondata_list.append(inc_jsondata)
         inc_jsondata={}
