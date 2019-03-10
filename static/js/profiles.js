@@ -89,7 +89,6 @@ function BuildProfileInfo(rank){
             
             rank_info.append("div").attr("id","infotext")
                     .append("h5").text("Rank: " + `${rank}`)
-                    .append("hr")
                     .append("h5").text("Company Name : " +` ${info[0]["Company"]}`)
                     .append("p").text("Founded Year : " + ` ${info[0]["Founded"]}`)
                     .append("p").text("2017 Revenue :   " + ` ${revenue_format}`)
