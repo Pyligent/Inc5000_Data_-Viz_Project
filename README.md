@@ -8,8 +8,13 @@
 + [Data Source](#Data-Source)
 + [Project Overview](#Project-Overview)   
 
-+ [1.Data Extract and Load](#1-Data-Extract-and-Load)
++ [1. Data Extract and Load](#1-Data-Extract-and-Load)
 + [2. Workflow Engine and JSON API format](#2-Workflow-Engine-and-JSON-API-format)
++ [3. Data Visualization](#3-Data-Visualization)
++ [4. Data Visualization Website and Dashborad](#4-Data-Visualization-Website-and-Dashborad)
++ [5. Deployment Notes](#5#Deployment-Notes)
+
+<hr>
 
 
 
@@ -139,7 +144,7 @@
   - Display all Geo information and related Growth and Revenue information
   ![map](img/map.png)
 
- #### Deployment Notes:
+ #### 5. Deployment Notes
  - Initialization Database: Set the primary key before the deployment.
    ```
    - $heroku pg:pgql
