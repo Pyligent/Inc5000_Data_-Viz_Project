@@ -11,7 +11,7 @@
 + [1. Data Extract and Load](#1-Data-Extract-and-Load)
 + [2. Workflow Engine and JSON API format](#2-Workflow-Engine-and-JSON-API-format)
 + [3. Data Visualization](#3-Data-Visualization)
-+ [4. Data Visualization Website and Dashborad](#4-Data-Visualization-Website-and-Dashborad)
++ [4. Data Visualization Website and Dashboard](#4-Data-Visualization-Website-and-Dashboard)
 + [5. Deployment Notes](#5-Deployment-Notes)
 
 <hr>
@@ -118,8 +118,8 @@
    - Headcount/Revenue/Years on the list/CEO
    - Website information
    
-#### 4. Data Visualization Website and Dashborad
-- Dashborad
+#### 4. Data Visualization Website and Dashboard
+- Dashboard
   - Overview the whole dataset:Geo Information/Industry Information/Top Cities and Top companies
   - Full List
   ![dash](img/dash.png)
