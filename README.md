@@ -9,7 +9,7 @@
 + [Project Overview](#Project-Overview)   
 
 + [1.Data Extract and Load](#1-Data-Extract-and-Load)
-+ [2. Workflow Engine (WFE)](#2-Workflow-Engine-(WFE))
++ [2. Workflow Engine and JSON API format](#2-Workflow-Engine-and-JSON-API-format)
 
 
 
@@ -35,7 +35,7 @@
 - **Deployment**: Will use the PostgreSQL DB on the heroku.com. The database initialization script(initdb.py) is [here](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/initdb.py)
 - Flask Webserver will provide the JSON format API data
 
-#### 2. Workflow Engine (WFE)
+#### 2. Workflow Engine and JSON API format
 - Using the Flask Web server/SQLAchemy/Python  to create the API route and JSON data for data visualization
 - **Flask API JSON Data Route**: [(app.py)](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/app.py)
   - **@app.route("/2018metadata")**   
