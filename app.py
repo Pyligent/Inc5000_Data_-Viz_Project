@@ -119,7 +119,7 @@ def build_filter_list(results,filter_name):
     if filter_name == 'Years_on_List' :
         col = 11
     for result in results:
-        if result[col] != np.NaN:
+        if result[col] != None:
             filter_list.append(result[col])
 
     filter_list = list(dict.fromkeys(filter_list))
@@ -139,7 +139,7 @@ def build_plot_list(results,plot_name):
     if plot_name == 'Years_on_List' :
         col = 11
     for result in results:
-        if result[col] != "":
+        if result[col] != None:
             plot_list.append(result[col])
 
     label_list = list(dict.fromkeys(plot_list))
