@@ -88,10 +88,8 @@ function BuildProfileInfo(rank){
             var growth_format = info[0]["Growth"].toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")+"%";
             
             rank_info.append("div").attr("id","infotext")
-                    .append("h5").text("Rank: " + `${rank}`)
-                    .append("hr")
-                    .append("h5").text("Company Name : " +` ${info[0]["Company"]}`)
-                    .append("p").text("Founded Year : " + ` ${info[0]["Founded"]}`)
+                     .append("h5").text("Rank: " + `${rank}`+ "<hr>Company Name: " +`${info[0]["Company"]}`)
+                     .append("p").text("Founded Year : " + ` ${info[0]["Founded"]}`)
                     .append("p").text("2017 Revenue :   " + ` ${revenue_format}`)
                     .append("p").text("3-Year Growth :   " + ` ${growth_format}`)
                     .append("p").text("Industry :" + ` ${info[0]["Industry"]}`)
