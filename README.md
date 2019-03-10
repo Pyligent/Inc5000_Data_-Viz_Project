@@ -22,7 +22,8 @@
 
 #### 1. Data Extract and Load
 - CSV formatted Data downloaded from the data.world
-- Using python/SQLAchemy/psycopg2 to Extract out[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Extract.ipynb)/Load into[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Load.ipynb) the PostgreSQL database
+- Local :Using python/SQLAchemy/psycopg2 to Extract out[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Extract.ipynb)/Load into[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Load.ipynb) the PostgreSQL database
+- Deployment: Will use the PostgreSQL DB on the heroku.com. The database initialization script is [here]()
 - Flask Webserver will provide the JSON format API data
 
 #### 2. Workflow Engine (WFE)
