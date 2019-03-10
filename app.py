@@ -90,7 +90,9 @@ def build_metadata_list(inc_jsondata_list,results):
         inc_jsondata['Company'] = result[12]
 # Fix url format
 
-        if result[13].startswith('http://'):
+        if  result[13] == None :
+            url = 'N/A'
+        elif ('http://' in result[13]):
             url = result[13]
         else:
             url = 'http://'+ result[13]
