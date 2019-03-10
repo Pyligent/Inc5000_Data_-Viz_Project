@@ -4,6 +4,14 @@
 
 ### Exploring INC Magazine's fastest growing private companies
 
+### Table of Contents
++ [Data Source](#Data-Source)
++ [Project Overview](#Project-Overview)
+<hr>
++ [1. Data Extract and Load](1.-Data-Extract-and-Load)
+
+
+
 #### Data Source
 
 - [Inc. Magazine](https://www.inc.com) has published the fastest growing private companies ranking list every year. The full data sets are hosted in the data.world.     
@@ -14,21 +22,21 @@
 - Data Storage : PostgreSQL   
 - Workflow Engine (WFE): Flask Web Server/SQLAchemy/Python   
 - Web Application/GUI : HTML/CSS, JavaScript,D3,Leaflet.js   
-- Production Deployment: Heroku  [(https://inc2018-dataviz-tj.herokuapp.com)](https://inc2018-dataviz-tj.herokuapp.com)
-- Product : Web Data Journalism Visualization, JSON format API data for INC 5000 data      
+- Production Deployment on Heroku.com: [(https://inc2018-dataviz-tj.herokuapp.com)](https://inc2018-dataviz-tj.herokuapp.com)
+- Product : Interactive Web Data Journalism Visualization, JSON format API data for INC 5000 data      
 
 <hr>
 
 
 #### 1. Data Extract and Load
 - CSV formatted Data downloaded from the data.world
-- Local :Using python/SQLAchemy/psycopg2 to Extract out[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Extract.ipynb)/Load into[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Load.ipynb) the PostgreSQL database
-- Deployment: Will use the PostgreSQL DB on the heroku.com. The database initialization script(initdb.py) is [here](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/initdb.py)
+- **Local** :Using python/SQLAchemy/psycopg2 to Extract out[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Extract.ipynb)/Load into[(GitHub)](https://nbviewer.jupyter.org/github/Pyligent/Inc5000_Data_Viz_Project/blob/master/Data_Load.ipynb) the PostgreSQL database
+- **Deployment**: Will use the PostgreSQL DB on the heroku.com. The database initialization script(initdb.py) is [here](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/initdb.py)
 - Flask Webserver will provide the JSON format API data
 
 #### 2. Workflow Engine (WFE)
 - Using the Flask Web server/SQLAchemy/Python  to create the API route and JSON data for data visualization
-- Flask API JSON Data Route: [(app.py)](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/app.py)
+- **Flask API JSON Data Route**: [(app.py)](https://github.com/Pyligent/Inc5000_Data_Viz_Project/blob/master/app.py)
   - **@app.route("/2018metadata")**   
     Return Full Inc2018 5000 JSON Metadata   
   
@@ -130,5 +138,41 @@
   - Display all Geo information and related Growth and Revenue information
   ![map](img/map.png)
 
+ #### Deployment Notes:
+ - Initialization Database: Set the primary key before the deployment.
+   ```
+   - $heroku pg:pgql
+   - $ALTER TABLENAME products ADD PRIMARY KEY (key_name);
+   
+   ```
+    
+ - PostgreSQL Heroku deployment
+   ```
+   Create postgreSQL db
+   - $heroku addons:create heroku-postgresql:hobby-dev
+   - $heroku pg:info
+   Push local DB into Heroku
+   -$ heroku pg:push mylocaldb HEROKU_POSTGRESQL_MAGENTA --app APPNAME
+   ```
+    
+ - Connecting to Python
+   - To use PostgreSQL as your database in Python applications you will need to use the psycopg2 package.
+   ```
+   import os
+   import psycopg2
+   DATABASE_URL = os.environ['DATABASE_URL']
+   conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+   ```
+ 
+ 
+ - Fully Test on all browsers: Safari/Chrome/Firefox/IE to solve the compatiable issues
+ 
+ - Git Process
+ ```
+   - git add .
+   - git commit -am "note"
+   - git push
+   - git push heroku master
+  ```
   
   
