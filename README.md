@@ -1,4 +1,4 @@
-##   Exploring Inc. Magazine's 2018 5000 fastest growing private companies in United States 
+##   Exploring Inc. Magazine's 2018 fastest growing private companies in United States 
 ###  Data Visualization Website: [https://inc2018-dataviz-tj.herokuapp.com](https://inc2018-dataviz-tj.herokuapp.com)
 ![incpic](img/inc.png)
 
