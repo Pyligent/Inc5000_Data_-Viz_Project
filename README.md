@@ -1,4 +1,4 @@
-##   -> Data Journalism Project <-   
+##   Data Journalism Project   
 ### [Data Visualization Website: https://inc2018-dataviz-tj.herokuapp.com](https://inc2018-dataviz-tj.herokuapp.com)
 ![incpic](img/inc.png)
 
