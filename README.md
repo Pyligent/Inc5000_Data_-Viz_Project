@@ -1,8 +1,8 @@
-##   Data Journalism Project   
-### [Data Visualization Website: https://inc2018-dataviz-tj.herokuapp.com](https://inc2018-dataviz-tj.herokuapp.com)
+##   Exploring Inc. Magazine's 2018 5000 fastest growing private companies in United States 
+###  Data Visualization Website: [https://inc2018-dataviz-tj.herokuapp.com](https://inc2018-dataviz-tj.herokuapp.com)
 ![incpic](img/inc.png)
 
-### Exploring INC Magazine's fastest growing private companies
+### Exploring Inc. Magazine's 2018 5000 fastest growing private companies in United States
 
 ### Table of Contents
 + [Data Source](#Data-Source)
