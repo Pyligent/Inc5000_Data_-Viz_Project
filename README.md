@@ -7,8 +7,7 @@
 ### Table of Contents
 + [Data Source](#Data-Source)
 + [Project Overview](#Project-Overview)
-<hr>
-+ [1. Data Extract and Load](1.-Data-Extract-and-Load)
+  + [Data Extract and Load](1.-Data-Extract-and-Load)
 
 
 
