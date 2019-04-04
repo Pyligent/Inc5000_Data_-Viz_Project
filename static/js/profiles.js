@@ -86,7 +86,7 @@ function BuildProfileInfo(rank){
             //console.log(info);
             var revenue_format = "$"+info[0]["Revenue"].toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
             var growth_format = info[0]["Growth"].toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")+"%";
-            
+           //adding <hr> will cause the problem by using the chrome browser 
             rank_info.append("div").attr("id","infotext")
                     .append("h5").text("Rank: " + `${rank}`)
                     .append("h5").text("Company Name : " +` ${info[0]["Company"]}`)
